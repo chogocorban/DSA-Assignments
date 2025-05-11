@@ -23,7 +23,7 @@ class DateCalculator:
         days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
         return days[h]
 
-x = int(input("Input the year: "))
+x = int(input("Input the Year: "))
 y = int(input("Input the Month: "))
 z = int(input("Input the Day: "))
 
