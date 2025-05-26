@@ -36,12 +36,13 @@ def is_palindrome(word):
     queue = Queue()
 
     for char in word.lower():
-        stack.push(char)
-        queue.enqueue(char)
+        if char.isalnum():
+            stack.push(char)
+            queue.enqueue(char)
 
     while not stack.is_empty() and not queue.is_empty():
         if stack.pop() != queue.dequeue():
-            print(f"The word '{word}' is a not palindrome")
+            print(f"The word '{word}' is not a palindrome")
             return False
 
 
